@@ -246,16 +246,6 @@ class Binairo:
         return self.puzzle == other.puzzle
     
 if __name__ == "__main__":
-    # puzzle = Binairo("puzzle.txt")
-    # puzzle[1] = "X0X0X0"
-    # puzzle[1:2] = "X0X0X0"
-    # print(puzzle)
-    # try:
-    #     puzzle.solve()
-    # except KeyboardInterrupt:
-    #     print(puzzle.possible_columns)
-    #     pass
-    # print(puzzle)
-
-    puzzle, solution = Binairo.from_url("https://binarypuzzle.com/special.php")
-    print(solution)
+    puzzle = Binairo("puzzle.txt")
+    puzzle.solve()
+    print(puzzle)
